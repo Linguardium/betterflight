@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "betterflight",
+	"version": "${version}",
+	"name": "Better Flight",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Linguardium",
+		"rejahtavi"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "
+	},
+	"license": "LGPL3",
+	"icon": "assets/betterflight/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.linguardium.betterflight.BetterFlight"
+		],
+		"client": [
+			"com.linguardium.betterflight.BetterFlightClient"
+		],
+		"fabric-datagen": [
+			"com.linguardium.betterflight.BetterFlightDataGenerator"
+		]
+	},
+	"mixins": [
+		"better-flight.mixins.json",
+		{
+			"config": "better-flight.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

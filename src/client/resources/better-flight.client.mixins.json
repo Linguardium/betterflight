@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.linguardium.betterflight.mixin.client",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "BoundKeyAccessor",
+    "Keybindings",
+    "KeyEvents",
+    "PlayerTickMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
